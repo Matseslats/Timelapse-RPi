@@ -1,0 +1,1 @@
+scp capture.py pi@10.0.0.2:/home/pi/
