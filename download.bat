@@ -1,1 +1,1 @@
-scp -r pi@10.0.0.2:/home/pi/cam-out/ ./downloaded-images/
+scp -r pi@10.0.0.2:/home/pi/cam-out/ ./downloaded-images-outside/
