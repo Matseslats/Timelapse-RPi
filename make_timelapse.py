@@ -2,12 +2,12 @@ import cv2
 import os
 
 # Input folder containing the images
-input_folder = "./downloaded-images/cam-out/"
+input_folder = "./downloaded-images-outside/cam-out/"
 
 # Output video file name and properties
-output_video = "timelapse.mp4"
+output_video = "timelapse-outside.mp4"
 frame_rate = 60  # Adjust as needed
-frame_size = (1360, 768)  # Adjust as needed
+frame_size = (3280, 2464)  # Adjust as needed
 
 # List all image files in the input folder
 image_files = [f for f in os.listdir(input_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
