@@ -14,7 +14,7 @@ input_folder = "./downloaded-images-outside/cam-out/"
 output_video = "timelapse-outside.mp4"
 frame_rate = 60  # Adjust as needed
 frame_size = (3280, 2464)  # Adjust as needed
-use_every_nth_frame = 50
+use_every_nth_frame = 3
 
 # List all image files in the input folder
 image_files = [f for f in os.listdir(input_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
@@ -34,7 +34,7 @@ time_start = time.time()
 display_width = 83
 print_every_nth_frame = math.ceil(min(50, len(image_files)/(display_width-4)))
 for index, image_file in enumerate(image_files):
-    if ((index % print_every_nth_frame == 0 or index == 1) or index == (len(image_files)-1)):
+    if ((index % print_every_nth_frame == 0 or index == 0) or index == (len(image_files)-1)):
         print("="*int((display_width)//2 -11), end="")
         print(f" {index+1:^10d}/{len(image_files):^10d} ", end="")
         print("="*int((display_width)//2 -11))
