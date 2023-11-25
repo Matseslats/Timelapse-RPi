@@ -14,7 +14,7 @@ input_folder = "./downloaded-images-outside/cam-out/"
 output_video = "timelapse-outside.mp4"
 frame_rate = 60  # Adjust as needed
 frame_size = (3280, 2464)  # Adjust as needed
-use_every_nth_frame = 3
+use_every_nth_frame = 5
 
 # List all image files in the input folder
 image_files = [f for f in os.listdir(input_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
